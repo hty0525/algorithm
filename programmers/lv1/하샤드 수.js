@@ -23,3 +23,10 @@ arr	return
 
 입출력 예 #4
 13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.`;
+function solution(x) {
+  return x %
+    [...String(x)].reduce((prev, cur) => Number(prev) + Number(cur), 0) ===
+    0
+    ? true
+    : false;
+}
