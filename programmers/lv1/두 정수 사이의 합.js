@@ -38,4 +38,5 @@ function adder(a, b){
   //함수를 완성하세요
   return (a+b)*(Math.abs(b-a)+1)/2;
 }
+가우스 법칙으로
 `;
