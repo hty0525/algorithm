@@ -10,10 +10,21 @@ arr	return
 [4,3,2,1]	[4,3,2]
 [10]	[-1]`;
 
+// function solution(arr) {
+//   if (arr.length === 1) {
+//     return [-1];
+//   }
+//   const arrSet = new Set(arr);
+//   const answer = [...arrSet]
+//     .sort((a, b) => b - a)
+//     .filter((num) => Math.min(...arrSet) !== num);
+//   return answer;
+// }
 function solution(arr) {
-  const answer = arr.sort((a, b) => b - a);
-  const a = answer.map((num) => {});
-  return arr.length === 1 ? [-1] : answer;
+  return arr.length === 1
+    ? [-1]
+    : arr.filter((num) => num !== Math.min(...arr));
 }
+//솔트 할 필요가 없었던 건가..?
 
-console.log(solution([1, 1, 2, 3, 4, 5, 6, 9]));
+console.log(solution([2, 2, 1, 4, 7, 0]));
