@@ -53,8 +53,6 @@ function solution(sizes) {
   return maxSize[0] * maxSize[1];
 }
 
-//구조분해할당 배열에서도 가능
-
 console.log(
   solution([
     [60, 50],
