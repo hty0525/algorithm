@@ -64,6 +64,7 @@ function solution(n, arr1, arr2) {
 solution(6, [46, 33, 33, 22, 31, 50], [27, 56, 19, 14, 14, 10]);
 
 `다음에 다시 풀어보는것으로.. 다른 사람 풀이
+padStart() 함수 기억
 function solution(n, arr1, arr2) {
   let num1, num2, s;
   let answer = [];

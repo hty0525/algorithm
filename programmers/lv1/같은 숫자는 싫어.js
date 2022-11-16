@@ -30,7 +30,7 @@ arr	answer
 //     return [...acc, cur];
 //   }, []);
 //   return answer;
-// }
+// }  시간초과가 계속 나는데, 찾아보니 리듀서의 효율이 맵, filter보다 좋지 않음
 function solution(arr) {
   let answer = [];
   arr.map((num, idx) => {
